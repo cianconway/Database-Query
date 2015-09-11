@@ -3,13 +3,13 @@ import psycopg2
 import psycopg2.extras
 import psycopg2.extensions
 
-DATABASE_HOST = 'ec2-54-204-20-209.compute-1.amazonaws.com'
-DATABASE_NAME = "d5qsnqpppo4nkq"
-USER_NAME = 'edbiaisfnankjt'
-PASSWORD = '_9F3AzzV1QSm9tEVu3tlrcoGcI'
+DATABASE_HOST = ''
+DATABASE_NAME = ""  # Database login information not pushed to GitHub
+USER_NAME = ''
+PASSWORD = ''
 SHOW_WHITE_SPACE = True # set to False if you need to trim column data
 
-sql = """copy_from edited_subscribers TO '/tmp/subscribers123.csv' DELIMITER ',' CSV HEADER"""
+sql = """copy_into edited_subscribers TO '/tmp/subscribers123.csv' DELIMITER ',' CSV HEADER"""  # Was originally \copy but character was not escaped
 
 
 
