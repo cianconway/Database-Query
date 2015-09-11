@@ -9,7 +9,7 @@ USER_NAME = ''
 PASSWORD = ''
 SHOW_WHITE_SPACE = True # set to False if you need to trim column data
 
-sql = """copy_into edited_subscribers TO '/tmp/subscribers123.csv' DELIMITER ',' CSV HEADER"""  # Was originally \copy but character was not escaped
+sql = """copy_from edited_subscribers TO '/tmp/subscribers123.csv' DELIMITER ',' CSV HEADER"""  # Was originally \copy but character was not escaped. Copy_into possibly
 
 
 
