@@ -9,7 +9,7 @@ USER_NAME = 'edbiaisfnankjt'
 PASSWORD = '_9F3AzzV1QSm9tEVu3tlrcoGcI'
 SHOW_WHITE_SPACE = True # set to False if you need to trim column data
 
-sql = """\copy (SELECT * FROM edited_subscribers WHERE edited=True AND flagged=False) TO '/tmp/subscribers.csv' DELIMITER ',' CSV HEADER"""
+sql = """SELECT * FROM edited_subscribers WHERE edited=True AND flagged=False"""
 
 
 
